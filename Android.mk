@@ -1,3 +1,4 @@
+ifneq ($(filter 5.4, $(KERNEL_VERSION)),)
 QCOM_MEDIA_ROOT := $(call my-dir)
 
 #Compile these for all targets under QCOM_BOARD_PLATFORMS list.
