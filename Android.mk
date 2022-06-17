@@ -8,3 +8,4 @@ ifeq ($(call is-board-platform-in-list, $(QCOM_BOARD_PLATFORMS)),true)
     include $(QCOM_MEDIA_ROOT)/libplatformconfig/Android.mk
 endif
 
+endif

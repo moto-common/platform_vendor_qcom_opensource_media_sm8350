@@ -1,5 +1,3 @@
-ifeq ($(call is-board-platform-in-list, $(QCOM_BOARD_PLATFORMS)),true)
-
 MM_CORE := libmm-omxcore
 MM_CORE += libOmxCore
 MM_CORE += libplatformconfig
@@ -16,7 +14,5 @@ PRODUCT_PACKAGES += $(MM_CORE)
 ifeq ($(call is-board-platform-in-list, taro lahaina holi), true)
     $(warning "Default Codec2.0 Enabled")
     PRODUCT_PROPERTY_OVERRIDES += debug.stagefright.ccodec=4
-endif
-
 endif
 
