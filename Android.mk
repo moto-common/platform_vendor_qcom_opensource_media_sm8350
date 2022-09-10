@@ -1,4 +1,4 @@
-ifneq ($(filter 5.4, $(KERNEL_VERSION)),)
+ifneq ($(filter 5.4, $(TARGET_KERNEL_VERSION)),)
 QCOM_MEDIA_ROOT := $(call my-dir)
 
 include $(QCOM_MEDIA_ROOT)/libstagefrighthw/Android.mk
